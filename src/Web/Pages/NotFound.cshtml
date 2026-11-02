@@ -1,0 +1,11 @@
+@page
+@model NotFoundModel
+@{
+    ViewData["Title"] = "Page not found";
+}
+
+<div class="container">
+    <h1>404 - Page not found</h1>
+    <p>The requested path <code>@Html.Raw(Model.RequestedPath)</code> was not found.</p>
+    <a asp-page="/Index">Return to the catalog</a>
+</div>
